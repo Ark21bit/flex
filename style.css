@@ -1,0 +1,89 @@
+body{
+        margin: 0;
+        display: block;
+        grid-template-columns: 50px calc(100% - 50px);
+        height: 100vh;
+        
+        height: 200vh;
+}
+
+.menu_box{
+        position: relative;
+        background-color: rgb(0, 255, 64);
+        
+}
+
+.menu{        
+    position: sticky;
+    background-color: rgb(255, 0, 221);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 0;
+    height: 100vh;
+}
+
+.menu>div{
+        width: 100%;
+        background-color: rgb(255, 102, 0);
+        height: 50px;
+        min-width: max-content;
+        z-index: -7;
+}
+
+.content{
+        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(225, 225, 238) 35%, rgb(88, 101, 104) 100%);
+        z-index: 2;
+        overflow: hidden;
+}
+
+.sd{
+        position: relative;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 70px;
+        /* or 175% */
+        
+        display: flex;
+        align-items: center;
+        
+        color: #FF7600;
+
+        text-shadow: #fc0 1px 0 10px;
+        z-index: 3;
+}
+
+.sd span{
+        position: absolute;
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        line-height: 70px;
+        /* or 100% */
+        
+        display: flex;
+        align-items: center;
+        
+        color: #DFDFDF;  
+        z-index: 0;      
+        
+        top: 5px;
+        left: 0px;
+
+}
+
+.btn{        
+        padding: 20px 40px;
+        height: fit-content;
+        
+        margin: 20px;
+        border: 10px solid transparent;
+        background: linear-gradient(90deg, #87354500, #763423);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+}
