@@ -82,8 +82,21 @@ body{
         
         margin: 20px;
         border: 10px solid transparent;
-        background: radial-gradient(circle at center, red 0, blue, green 100%);
+        background: linear-gradient(90deg, #87354500, #763423);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+}
+
+.flex{
+        display: flex;
+}
+
+.flex>div:nth-of-type(odd){
+flex-grow: 1;
+background-color: #fc0;
+}
+
+.grid{
+        display: grid;
 }
