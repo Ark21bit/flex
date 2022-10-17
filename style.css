@@ -112,6 +112,7 @@ background-color: #fc0;
 
 .swiper-slide{
         width: auto!important; 
+        background-clip: content-box;
 }
 
 .swiper-wrapper{
@@ -121,42 +122,51 @@ background-color: #fc0;
         z-index: 1;
         display: grid;
         transition-property: transform;
-        grid-template-columns: repeat(4, 24%);
+        grid-template-columns: repeat(4, 25%);
         box-sizing: content-box;
         grid-auto-flow: column;
         grid-template-rows: auto auto;
-        grid-auto-columns: 24%;
-        gap: calc(4% / 3);
+        grid-auto-columns: 25%;
+        row-gap: 20px;
+        
 }
 
 .swiper-slide:nth-child(5n+1){
         background-color: #18dd32;  
         grid-row: span 2;  
         grid-column: span 1;     
+        padding-right: 10px;
+       
 }
 
 .swiper-slide:nth-child(5n+2){
         background-color: #9518dd;      
         grid-row: span 1;
-        grid-column: span 2;     
+        grid-column: span 2;    
+        padding-right: 10px;
+        padding-left: 10px; 
 }
 
 .swiper-slide:nth-child(5n+3){
         background-color: #2c18dd;   
         grid-row: span 1;  
         grid-column: span 1;     
+        padding-right: 10px;
+        padding-left: 10px;
 }
 
 .swiper-slide:nth-child(5n+4){
         background-color: #cc1e6f;       
         grid-row: span 1; 
-        grid-column: span 2;  
+        grid-column: span 2;
+        padding-left: 10px;
 }
 
 .swiper-slide:nth-child(5n+5){
         background-color: #cc1e1e;       
         grid-row: span 1; 
-        grid-column: span 1;  
+        grid-column: span 1;
+        padding-left: 10px;
 }
 
 @media screen and (max-width:989px) {
@@ -168,36 +178,44 @@ background-color: #fc0;
                 z-index: 1;
                 display: grid;
                 transition-property: transform;
-                grid-template-columns: repeat(3, 33%);
+                grid-template-columns: repeat(3, calc(100% / 3));
                 box-sizing: content-box;
                 grid-auto-flow: column;
                 grid-template-rows: auto auto;
-                grid-auto-columns: 33%;
-                gap: calc(1% / 2);
+                grid-auto-columns: calc(100% / 3);
+                
         }
 
         .swiper-slide:nth-child(4n+1){
                 background-color: #18dd32;  
                 grid-row: span 2;  
                 grid-column: span 1;     
+                padding-right: 10px;
+                padding-left: 0px;
         }
         
         .swiper-slide:nth-child(4n+2){
                 background-color: #9518dd;      
                 grid-row: span 1;
-                grid-column: span 2;     
+                grid-column: span 2;                     
+                padding-left: 10px;
+                padding-right: 0px;
         }
         
         .swiper-slide:nth-child(4n+3){
                 background-color: #2c18dd;   
                 grid-row: span 1;  
-                grid-column: span 1;     
+                grid-column: span 1;    
+                padding-right: 10px;
+                padding-left: 10px; 
         }
         
         .swiper-slide:nth-child(4n+4){
                 background-color: #cc1e6f;       
                 grid-row: span 1; 
                 grid-column: span 1;  
+                padding-left: 10px; 
+                padding-right: 0px;
         }
         
        
@@ -212,36 +230,44 @@ background-color: #fc0;
                 z-index: 1;
                 display: grid;
                 transition-property: transform;
-                grid-template-columns: repeat(2, 49%);
+                grid-template-columns: repeat(2, 50%);
                 box-sizing: content-box;
                 grid-auto-flow: column;
                 grid-template-rows: auto auto;
-                grid-auto-columns: 49%;
-                gap: 2%;
+                grid-auto-columns: 50%;
+                
         }
 
         .swiper-slide:nth-child(4n+1){
                 background-color: #18dd32;  
                 grid-row: span 1;  
                 grid-column: span 1;     
+                padding-left: 0px; 
+                padding-right: 10px;
         }
         
         .swiper-slide:nth-child(4n+2){
                 background-color: #9518dd;      
                 grid-row: span 1;
-                grid-column: span 1;     
+                grid-column: span 1;  
+                padding-left: 0px; 
+                padding-right: 10px;   
         }
         
         .swiper-slide:nth-child(4n+3){
                 background-color: #2c18dd;   
                 grid-row: span 1;  
-                grid-column: span 1;     
+                grid-column: span 1;  
+                padding-left: 10px; 
+                padding-right: 0px;   
         }
         
         .swiper-slide:nth-child(4n+4){
                 background-color: #cc1e6f;       
                 grid-row: span 1; 
                 grid-column: span 1;  
+                padding-left: 10px; 
+                padding-right: 0px;
         }
         
        

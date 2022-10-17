@@ -1,6 +1,7 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters        
-  
+    slidesPerView:4,
+    slidesPerGroup:4,    
     // If we need pagination
     
     // Navigation arrows
@@ -8,7 +9,7 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-    // And if we need scrollbar
+
+    
     
   });
